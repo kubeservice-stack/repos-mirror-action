@@ -25,7 +25,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: Repo Mirror Sync
+      - name: Repo Mirror Sync Gitee
         uses: kubeservice-stack/repos-mirror-action@v1.0.3
         with:
           target-url: https://gitee.com/dongjiang1989/mirror-action.git
