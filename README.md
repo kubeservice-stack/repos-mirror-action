@@ -12,16 +12,15 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    name: Git Repo Sync
+    name: Repo Mirror Sync
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
+    - name: Repo Mirror Sync
+      uses: kubeservice-stack/repos-mirror-action@v1.0.1
       with:
-        fetch-depth: 0
-    - uses: wangchucheng/git-repo-sync@v0.1.0
-      with:
-        # Such as https://github.com/wangchucheng/git-repo-sync.git
+        # Such as https://github.com/dongjiang1989/mirror-action.git
         target-url: <target-url>
-        # Such as wangchucheng
+        # Such as dongjiang1989
         target-username: <target-username>
         # You can store token in your project's 'Setting > Secrets' and reference the name here. Such as ${{ secrets.ACCESS_TOKEN }}
         target-token: <target-token>
