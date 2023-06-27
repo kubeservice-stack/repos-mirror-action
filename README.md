@@ -46,8 +46,8 @@ jobs:
 
 | Variable | Description | Required | `[Default]` |
 |----|----|----|----|
-| target-token | Token for the repo. Can be passed in using `$\{{ secrets.GITHUB_TOKEN }}` | `true` |  |
+| target-token | Token for the repo. Can be passed in using `${{ secrets.ACCESS_TOKEN }}` | `true` |  |
 | target-username | Repository user name | `true` | |
-| target-url | The target Url wiht `https` protocol | `true` |  |
+| target-url | The target Url with `https` protocol | `true` |  |
 
 * target-token the API token to create non-existent repo, You can get Github token in [here](https://github.com/settings/tokens), and the Gitee in [here](https://gitee.com/profile/personal_access_tokens).
