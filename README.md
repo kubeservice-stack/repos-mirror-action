@@ -52,4 +52,4 @@ jobs:
 | target-username | Repository user name | `true` | |
 | target-url | The target Url with `https` protocol | `true` |  |
 
-* `target-token` the API token to create non-existent repo, You can get Github token in [here](https://github.com/settings/tokens), and the Gitee in [here](https://gitee.com/profile/personal_access_tokens).
+* `target-token` the API token to create non-existent repo, You can get Github token in [here](https://github.com/settings/tokens), GitLab token in [here](https://gitlab.com/-/profile/personal_access_tokens) and the Gitee in [here](https://gitee.com/profile/personal_access_tokens).
